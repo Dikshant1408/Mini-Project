@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796509609758",
+    "project_id": "eulerproject",
+    "storage_bucket": "eulerproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796509609758:android:5f7aab1bc8f47b005f330f",
+        "android_client_info": {
+          "package_name": "com.example.project_euler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796509609758-33ge0cflbb514u3mdsmuvkflvdr2eqvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABLPV7a4TTEMKKxbmPpKr2rcNUy4pb4Rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796509609758-33ge0cflbb514u3mdsmuvkflvdr2eqvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

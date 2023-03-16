@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/bottom_forun"
+        android:title="Forum"
+        android:icon="@drawable/baseline_chat_24"/>
+
+    <item android:id="@+id/bottom_downloads"
+        android:title="Download"
+        android:icon="@drawable/baseline_download_24"/>
+</menu>
