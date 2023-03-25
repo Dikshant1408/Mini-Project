@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "159595736346",
+    "project_id": "projecteuler-37de9",
+    "storage_bucket": "projecteuler-37de9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159595736346:android:c9d7016b689b14b5e090a3",
+        "android_client_info": {
+          "package_name": "com.example.eulerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159595736346-l1f1jldofkjnv7ritap8796bpb75ju3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eulerproject",
+            "certificate_hash": "a09b12a989e87b85771903d51844ad2910752c21"
+          }
+        },
+        {
+          "client_id": "159595736346-r1g6b48l2f0kh0noo61gg0hgrr2g29vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaaj4g34Zl-kxMwwNCtd-KdYQTIEyjafM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159595736346-r1g6b48l2f0kh0noo61gg0hgrr2g29vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
