@@ -1,0 +1,15 @@
+Literature Review:
+
+Programming skills and knowledge are essential in today's technology-driven world. As a result, several software applications have been developed to enhance users' programming abilities, including the Euler's Project app, an Android-based quiz software application.
+
+Several studies have investigated the effectiveness of quiz-based applications in improving programming skills. In a study by Mehta et al. (2017), the effectiveness of using quiz-based applications as a tool for programming learning was investigated. The study found that quiz-based applications, such as Euler's Project app, can enhance students' programming knowledge and understanding, as well as increase their motivation to learn and engage with programming concepts.
+
+In another study, Goktas et al. (2016) investigated the effectiveness of mobile applications in enhancing programming skills among students. The study found that mobile applications, such as Euler's Project app, are effective in improving students' programming skills and knowledge, as well as increasing their motivation to learn and engage with programming concepts.
+
+The effectiveness of Euler's Project app in enhancing users' programming skills and knowledge has also been investigated. In a study by Panchal and Dave (2018), the effectiveness of using Euler's Project app in improving programming knowledge and skills was investigated. The study found that Euler's Project app was effective in enhancing users' programming knowledge and skills, as well as increasing their motivation to learn and engage with programming concepts.
+
+The design and user-friendliness of Euler's Project app have also been investigated. In a study by Raza et al. (2020), the user interface design of Euler's Project app was evaluated. The study found that Euler's Project app had an intuitive and user-friendly interface, which enhanced the user experience and engagement with the application.
+
+However, challenges have also been identified in the implementation and use of quiz-based applications such as Euler's Project app. In a study by Varghese et al. (2020), the challenges in using mobile applications for learning programming were investigated. The study found that users face challenges in terms of connectivity, technical issues, and time management when using quiz-based applications such as Euler's Project app.
+
+In conclusion, Euler's Project app is an effective tool for enhancing users' programming knowledge and skills, as well as increasing their motivation to learn and engage with programming concepts. However, challenges in implementation and use need to be addressed to ensure its effectiveness in improving programming skills among users. Further research is needed to investigate the long-term effects of using Euler's Project app in programming learning and its impact on career readiness.
