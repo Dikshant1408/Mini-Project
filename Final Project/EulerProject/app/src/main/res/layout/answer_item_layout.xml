@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/round_view">
+
+    <TextView
+        android:id="@+id/quesNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question No. 1"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:text="Question"/>
+
+    <TextView
+        android:id="@+id/OptionA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A : 123"/>
+
+    <TextView
+        android:id="@+id/OptionB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A : 123"/>
+
+    <TextView
+        android:id="@+id/OptionC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A : 123"/>
+
+    <TextView
+        android:id="@+id/OptionD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A : 123"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WRONG"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/red"/>
+
+</LinearLayout>
