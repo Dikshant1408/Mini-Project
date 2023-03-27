@@ -46,7 +46,6 @@ public class ScoreActivity extends AppCompatActivity {
 
         dialogText = progressDialog.findViewById(R.id.dialog_text);
         dialogText.setText("Loading ...");
-        progressDialog.show();
 
         init();
 
