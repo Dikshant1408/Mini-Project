@@ -4,15 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.eulerproject.Fragement.LeaderboardFragment;
 
 import java.util.concurrent.TimeUnit;
 
@@ -54,7 +58,8 @@ public class ScoreActivity extends AppCompatActivity {
         viewAnsB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(ScoreActivity.this, AnswersActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -63,6 +68,14 @@ public class ScoreActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 reAttempt();
+            }
+        });
+
+        leaderB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .add(android.R.id.content, new LeaderboardFragment ()).commit();
             }
         });
 
@@ -85,18 +98,30 @@ public class ScoreActivity extends AppCompatActivity {
     }
 
     private void loadData(){
+
+
         int correctQ = 0, wrongQ = 0, unattempyQ = 0;
 
-        for (int i=0; i < DbQuery.g_questList.size(); i++){
-            if (DbQuery.g_questList.get(i).getSelectedAns() == -1){
-                unattempyQ ++;
-            } else {
-                if (DbQuery.g_questList.get(i).getSelectedAns() == DbQuery.g_questList.get(i).getCorrectAns()){
-                    correctQ ++;
+        try {
+            for (int i=0; i < DbQuery.g_questList.size(); i++){
+                if (DbQuery.g_questList.get(i).getSelectedAns() == -1){
+                    unattempyQ ++;
+                    Log.println(Log.INFO, "unattem", unattempyQ + "");
                 } else {
-                    wrongQ ++;
+                    if (DbQuery.g_questList.get(i).getSelectedAns() == DbQuery.g_questList.get(i).getCorrectAns()){
+                        correctQ ++;
+                        Log.println(Log.INFO, "correc", correctQ + "");
+                    } else {
+                        wrongQ ++;
+                        Log.println(Log.INFO, "wrong", wrongQ + "");
+                    }
                 }
             }
+
+
+        } catch (Exception e) {
+            // Handle the exception here
+            e.printStackTrace();
         }
 
         correctQTV.setText(String.valueOf(correctQ));
@@ -105,17 +130,18 @@ public class ScoreActivity extends AppCompatActivity {
 
         totalQTV.setText(String.valueOf(DbQuery.g_questList.size()));
 
-        finalScore = (correctQ * 10) / DbQuery.g_questList.size();
+        finalScore = (correctQ * 100) / DbQuery.g_questList.size();
         finalScore = correctQ;
         scoreTV.setText(String.valueOf(finalScore));
 
         timeTaken = getIntent().getLongExtra("TIME TAKEN",0);
 
-        String time = String.format("%02d:%2d min",
+        @SuppressLint("DefaultLocale") String time = String.format("%02d:%2d min",
                 TimeUnit.MILLISECONDS.toMinutes(timeTaken),
-                TimeUnit.MILLISECONDS.toSeconds(timeTaken) -
-                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTaken))
+                TimeUnit.MILLISECONDS.toSeconds(timeTaken) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(timeTaken))
         );
+        timeTV.setText(time);
+
     }
 
     private void reAttempt(){

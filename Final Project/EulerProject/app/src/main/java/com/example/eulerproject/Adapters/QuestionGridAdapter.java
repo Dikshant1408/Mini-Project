@@ -68,7 +68,7 @@ public class QuestionGridAdapter extends BaseAdapter {
         TextView quesTV = myview.findViewById(R.id.ques_num);
         quesTV.setText(String.valueOf(i + 1));
 
-        Log.d("LOGGGGGGGGGGG",String.valueOf(DbQuery.g_questList.get(i).getStatus()));
+        Log.d("LOG",String.valueOf(DbQuery.g_questList.get(i).getStatus()));
         switch (DbQuery.g_questList.get(i).getStatus()){
             case NOT_VISITED:
                 quesTV.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(myview.getContext(),R.color.grey)));

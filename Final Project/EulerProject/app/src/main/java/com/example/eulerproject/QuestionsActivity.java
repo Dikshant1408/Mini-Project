@@ -257,7 +257,7 @@ public class QuestionsActivity extends AppCompatActivity {
             public void onTick(long remainingTime) {
 
                 timerLeft = remainingTime;
-                String time = String.format("%02d:%2d min",
+                @SuppressLint("DefaultLocale") String time = String.format("%02d:%2d min",
                         TimeUnit.MILLISECONDS.toMinutes(remainingTime),
                         TimeUnit.MILLISECONDS.toSeconds(remainingTime) -
                                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(remainingTime))

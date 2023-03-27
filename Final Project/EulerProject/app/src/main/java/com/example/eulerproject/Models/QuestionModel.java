@@ -11,7 +11,7 @@ public class QuestionModel {
     private int status;
 
 
-    public QuestionModel(String question, String optionA, String optionB, String optionC, String optionD, int answer, int correctAns, int selectedAns) {
+    public QuestionModel(String question, String optionA, String optionB, String optionC, String optionD,int correctAns, int selectedAns, int status) {
         this.question = question;
         this.optionA = optionA;
         this.optionB = optionB;

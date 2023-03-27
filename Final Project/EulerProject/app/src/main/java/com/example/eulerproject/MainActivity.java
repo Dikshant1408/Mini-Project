@@ -2,34 +2,22 @@ package com.example.eulerproject;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.Menu;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
+import com.example.eulerproject.Fragement.AccountFragment;
+import com.example.eulerproject.Fragement.CategoryFragment;
+import com.example.eulerproject.Fragement.LeaderboardFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.ui.ToolbarKt;
-
-import com.example.eulerproject.databinding.ActivityMainBinding;
-
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -68,7 +56,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         bottomNavigationView = findViewById(R.id.bottom_nav_bar);
         main_frame = findViewById(R.id.main_frame);
         bottomNavigationView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener);
-
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
